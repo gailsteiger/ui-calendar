@@ -135,6 +135,12 @@ calendarDemoApp.controller ('CalendarCtrl',
             $scope.alertMessage = ('Event was selected ');
             console.log(start);
             console.log(end);
+            $scope.events.push ({
+                title:     'Open Sesame',
+                start:     start,
+                end:       end,
+                className: ['openSesame']
+            });
         };
         /* config object */
         $scope.uiConfig = {
